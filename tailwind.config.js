@@ -1,15 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: true, // Ensures Tailwind CSS can work alongside Chakra UI
+  prefix: 'tw-', // Prefix to avoid conflicts with Chakra UI
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       colors: {
+        // Mirror Chakra UI primary colors for consistency
         primary: {
           25: "#FCFAFF",
           50: "#F9F5FF",
@@ -36,54 +37,13 @@ module.exports = {
           800: "#1D2939",
           900: "#101828",
         },
-        success: {
-          25: "#F6FEF9",
-          50: "#ECFDF3",
-          100: "#D1FADF",
-          200: "#A6F4C5",
-          300: "#6CE9A6",
-          400: "#32D583",
-          500: "#12B76A",
-          600: "#039855",
-          700: "#027A48",
-          800: "#05603A",
-          900: "#054F31",
-        },
-        warning: {
-          25: "#FFFCF5",
-          50: "#FFFAEB",
-          100: "#FEF0C7",
-          200: "#FEDF89",
-          300: "#FEC84B",
-          400: "#FDB022",
-          500: "#F79009",
-          600: "#DC6803",
-          700: "#B54708",
-          800: "#93370D",
-          900: "#7A2E0E",
-        },
-        error: {
-          25: "#FFFBFA",
-          50: "#FEF3F2",
-          100: "#FEE4E2",
-          200: "#FECDCA",
-          300: "#FDA29B",
-          400: "#F97066",
-          500: "#F04438",
-          600: "#D92D20",
-          700: "#B42318",
-          800: "#912018",
-          900: "#7A271A",
-        },
       },
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
-        mono: ['Menlo', 'monospace'],
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out',
-        'slide-up': 'slideUp 0.6s ease-out',
-        'spin-slow': 'spin 3s linear infinite',
+        'slide-up': 'slideUp 0.4s ease-out',
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
@@ -92,25 +52,19 @@ module.exports = {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         slideUp: {
-          '0%': { opacity: '0', transform: 'translateY(30px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(0)' },
         },
       },
       backdropBlur: {
         xs: '2px',
       },
-      spacing: {
-        '18': '4.5rem',
-        '88': '22rem',
-        '112': '28rem',
-        '128': '32rem',
-      },
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
   ],
+  // Ensure dark mode compatibility
+  darkMode: 'class',
 }
 

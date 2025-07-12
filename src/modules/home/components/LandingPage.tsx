@@ -22,6 +22,7 @@ import {
 import { motion } from "framer-motion";
 import { Star, Zap, Shield, Globe, TrendingUp, Users } from "lucide-react";
 import React, { FC } from "react";
+import { tailwindUtils, cn } from "@/utils/tailwind";
 
 const MotionBox = motion(Box);
 const MotionFlex = motion(Flex);
@@ -91,6 +92,7 @@ const LandingPage: FC<LandingPageProps> = ({ onGetStarted }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
+                    className={cn(tailwindUtils.spacing.section, "tw-relative")}
                 >
                     <Badge
                         colorScheme="purple"
@@ -99,6 +101,11 @@ const LandingPage: FC<LandingPageProps> = ({ onGetStarted }) => {
                         py={2}
                         borderRadius="full"
                         mb={6}
+                        className={cn(
+                            tailwindUtils.animations.pulse,
+                            tailwindUtils.effects.shadow.colored,
+                            "tw-backdrop-blur-sm"
+                        )}
                     >
                         🚀 Powered by Andromeda Protocol
                     </Badge>
@@ -109,6 +116,10 @@ const LandingPage: FC<LandingPageProps> = ({ onGetStarted }) => {
                         bgGradient="linear(to-r, primary.400, primary.600, purple.600)"
                         bgClip="text"
                         lineHeight="1.2"
+                        className={cn(
+                            tailwindUtils.text.gradient,
+                            "tw-text-5xl md:tw-text-6xl lg:tw-text-7xl"
+                        )}
                     >
                         The Future of
                         <br />
@@ -121,12 +132,16 @@ const LandingPage: FC<LandingPageProps> = ({ onGetStarted }) => {
                         maxW="2xl"
                         mb={8}
                         lineHeight="1.6"
+                        className={cn(
+                            tailwindUtils.text.pretty,
+                            "tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+                        )}
                     >
                         Discover, collect, and trade extraordinary NFTs in the most advanced
                         decentralized marketplace. Built for creators, collectors, and the future of digital ownership.
                     </Text>
 
-                    <HStack spacing={4} mb={12}>
+                    <HStack spacing={4} mb={12} className="tw-flex-wrap tw-justify-center">
                         <Button
                             size="lg"
                             colorScheme="primary"
@@ -136,6 +151,11 @@ const LandingPage: FC<LandingPageProps> = ({ onGetStarted }) => {
                             fontSize="lg"
                             _hover={{ transform: "translateY(-2px)", shadow: "xl" }}
                             transition="all 0.3s"
+                            className={cn(
+                                tailwindUtils.animations.scale,
+                                tailwindUtils.effects.shadow.glow,
+                                "tw-font-semibold"
+                            )}
                         >
                             Explore Marketplace
                         </Button>
@@ -147,6 +167,10 @@ const LandingPage: FC<LandingPageProps> = ({ onGetStarted }) => {
                             fontSize="lg"
                             _hover={{ transform: "translateY(-2px)" }}
                             transition="all 0.3s"
+                            className={cn(
+                                tailwindUtils.animations.hover,
+                                "tw-backdrop-blur-sm"
+                            )}
                         >
                             Learn More
                         </Button>
@@ -209,7 +233,9 @@ const LandingPage: FC<LandingPageProps> = ({ onGetStarted }) => {
                     </Text>
                 </MotionBox>
 
-                <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }} gap={8}>
+                <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }} gap={8}
+                    className="tw-gap-8"
+                >
                     {features.map((feature, index) => (
                         <MotionBox
                             key={index}
@@ -228,19 +254,30 @@ const LandingPage: FC<LandingPageProps> = ({ onGetStarted }) => {
                                 }}
                                 transition="all 0.3s"
                                 h="full"
+                                className={cn(
+                                    tailwindUtils.animations.hover,
+                                    tailwindUtils.effects.shadow.soft,
+                                    "tw-backdrop-blur-sm"
+                                )}
                             >
-                                <CardBody p={8}>
+                                <CardBody p={8} className="tw-space-y-4">
                                     <VStack align="start" spacing={4}>
                                         <Box
                                             p={3}
                                             borderRadius="lg"
                                             bg={iconBg}
                                             color={accentColor}
+                                            className={cn(
+                                                tailwindUtils.animations.scale,
+                                                "tw-transition-colors tw-duration-300"
+                                            )}
                                         >
                                             <Icon as={feature.icon} boxSize={6} />
                                         </Box>
-                                        <Heading size="md">{feature.title}</Heading>
-                                        <Text color={textColor} lineHeight="1.6">
+                                        <Heading size="md" className="tw-font-bold">
+                                            {feature.title}
+                                        </Heading>
+                                        <Text color={textColor} lineHeight="1.6" className={tailwindUtils.text.pretty}>
                                             {feature.description}
                                         </Text>
                                     </VStack>

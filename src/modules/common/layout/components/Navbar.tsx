@@ -19,6 +19,7 @@ import { CollectionDropdown, ConnectWallet } from "@/modules/common/cta";
 import useApp from "@/lib/app/hooks/useApp";
 import Link from "next/link";
 import { LINKS } from "@/utils/links";
+import { tailwindUtils, cn } from "@/utils/tailwind";
 
 interface NavbarProps { }
 const Navbar: FC<NavbarProps> = (props) => {
@@ -41,6 +42,10 @@ const Navbar: FC<NavbarProps> = (props) => {
       zIndex="1000"
       backdropFilter="blur(10px)"
       shadow="sm"
+      className={cn(
+        tailwindUtils.effects.glassmorphism,
+        "tw-backdrop-blur-lg tw-border-b"
+      )}
     >
       <Flex
         direction="row"
@@ -48,6 +53,7 @@ const Navbar: FC<NavbarProps> = (props) => {
         maxW="7xl"
         mx="auto"
         gap="4"
+        className={cn(tailwindUtils.flexBetween, "tw-w-full")}
       >
         <Link href={LINKS.home()} passHref>
           <Text
@@ -57,20 +63,35 @@ const Navbar: FC<NavbarProps> = (props) => {
             color={logoColor}
             _hover={{ opacity: 0.8 }}
             transition="all 0.2s"
+            className={cn(
+              tailwindUtils.animations.scale,
+              tailwindUtils.text.gradient,
+              "tw-font-extrabold tw-text-2xl"
+            )}
           >
             ⚡ {config.name}
           </Text>
         </Link>
 
-        <Flex direction="row" ml="auto" gap="4" alignItems="center">
-          <HStack spacing="4" display={{ base: "none", md: "flex" }}>
-            <Button variant="ghost" size="sm">
+        <Flex direction="row" ml="auto" gap="4" alignItems="center"
+          className="tw-space-x-2"
+        >
+          <HStack spacing="4" display={{ base: "none", md: "flex" }}
+            className="tw-space-x-2"
+          >
+            <Button variant="ghost" size="sm"
+              className={cn(tailwindUtils.animations.hover, "tw-font-medium")}
+            >
               Explore
             </Button>
-            <Button variant="ghost" size="sm">
+            <Button variant="ghost" size="sm"
+              className={cn(tailwindUtils.animations.hover, "tw-font-medium")}
+            >
               Create
             </Button>
-            <Button variant="ghost" size="sm">
+            <Button variant="ghost" size="sm"
+              className={cn(tailwindUtils.animations.hover, "tw-font-medium")}
+            >
               Activity
             </Button>
           </HStack>
@@ -85,6 +106,10 @@ const Navbar: FC<NavbarProps> = (props) => {
             size="sm"
             _hover={{ transform: "scale(1.1)" }}
             transition="all 0.2s"
+            className={cn(
+              tailwindUtils.animations.scale,
+              "tw-rounded-full tw-transition-all tw-duration-300"
+            )}
           />
 
           <ConnectWallet />
@@ -98,11 +123,12 @@ const Navbar: FC<NavbarProps> = (props) => {
               variant="ghost"
               size="sm"
               display={{ base: "flex", md: "none" }}
+              className={cn(tailwindUtils.animations.scale, "tw-rounded-full")}
             />
-            <MenuList>
-              <MenuItem>Explore</MenuItem>
-              <MenuItem>Create</MenuItem>
-              <MenuItem>Activity</MenuItem>
+            <MenuList className="tw-backdrop-blur-sm">
+              <MenuItem className={tailwindUtils.animations.hover}>Explore</MenuItem>
+              <MenuItem className={tailwindUtils.animations.hover}>Create</MenuItem>
+              <MenuItem className={tailwindUtils.animations.hover}>Activity</MenuItem>
             </MenuList>
           </Menu>
         </Flex>

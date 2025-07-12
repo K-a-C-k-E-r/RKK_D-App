@@ -1,3 +1,4 @@
+/* Tailwind CSS imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -54,6 +55,24 @@ img {
   height: auto;
 }
 
+/* Smooth animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Glass effect utility */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 /* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
   html {
@@ -76,52 +95,20 @@ button {
   animation: spin 1s linear infinite;
 }
 
-/* UI Toggle Button */
-.ui-toggle-button {
-  position: fixed;
-  top: 80px;
-  right: 16px;
-  z-index: 50;
-  padding: 4px 12px;
-  color: white;
-  font-size: 12px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(45deg, #7F56D9, #9E77ED, #B692F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.ui-toggle-button.chakra {
-  background-color: #10B981;
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ui-toggle-button.chakra:hover {
-  background-color: #059669;
-}
-
-.ui-toggle-button.tailwind {
-  background-color: #3B82F6;
-}
-
-.ui-toggle-button.tailwind:hover {
-  background-color: #2563EB;
-}
-
-/* Gradient text utility */
-@layer utilities {
-  .gradient-text {
-    @apply bg-gradient-to-r from-primary-600 via-primary-500 to-purple-600 bg-clip-text text-transparent;
-  }
-  
-  .glass {
-    @apply bg-white/10 backdrop-blur-sm border border-white/20;
-  }
-  
-  .glass-dark {
-    @apply bg-black/10 backdrop-blur-sm border border-gray-700/50;
-  }
-  
-  .card-hover {
-    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
-  }
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
