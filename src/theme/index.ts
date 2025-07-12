@@ -14,8 +14,8 @@ import Tooltip from "./tooltip";
 import shadows from "./shadows";
 
 const config: ThemeConfig = {
-  initialColorMode: 'light',
-  useSystemColorMode: false,
+  initialColorMode: 'dark',
+  useSystemColorMode: true,
 }
 
 export const ThemeStorageManager = createLocalStorageManager("andromeda-marketplace-theme");
@@ -23,25 +23,30 @@ export const ThemeStorageManager = createLocalStorageManager("andromeda-marketpl
 export default extendTheme({
   config,
   styles: {
-    global: {
+    global: (props: any) => ({
       "*": {
         scrollbarWidth: "6px",
         scrollbarColor: "#7F56D9 transparent",
       },
-
       "*::-webkit-scrollbar": {
         width: "6px",
       },
-
       "*::-webkit-scrollbar-track": {
         bg: "transparent",
       },
-
       "*::-webkit-scrollbar-thumb": {
         bg: "#7F56D9",
         borderRadius: "1.5rem",
       },
-    },
+      body: {
+        bg: props.colorMode === 'dark' ? 'gray.900' : 'white',
+        color: props.colorMode === 'dark' ? 'white' : 'gray.900',
+        transition: 'background-color 0.2s, color 0.2s',
+      },
+      html: {
+        bg: props.colorMode === 'dark' ? 'gray.900' : 'white',
+      }
+    }),
   },
   shadows,
   fonts: {
@@ -201,17 +206,14 @@ export default extendTheme({
   textStyles: {
     h1: {
       fontWeight: 700,
-      color: "gray.900",
       fontSize: "xl",
       mb: 2,
       letterSpacing: 0.5,
     },
     bold: {
-      color: "gray.700",
       fontWeight: 700,
     },
     light: {
-      color: "gray.500",
       fontSize: "sm",
     },
   },
