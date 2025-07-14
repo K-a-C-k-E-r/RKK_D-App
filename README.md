@@ -60,7 +60,7 @@
 ```bash
 # Clone the repository
 git clone https://github.com/ROHIT8759/embeddable-marketplace.git
-cd embeddable-marketplace-demo
+cd embeddable-marketplace
 
 # Install dependencies
 npm install
