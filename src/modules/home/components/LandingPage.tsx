@@ -23,6 +23,7 @@ import { motion } from "framer-motion";
 import { Star, Zap, Shield, Globe, TrendingUp, Users } from "lucide-react";
 import React, { FC } from "react";
 import { tailwindUtils, cn } from "@/utils/tailwind";
+import EmbeddableExchange from "./EmbeddableExchange";
 
 const MotionBox = motion(Box);
 const MotionFlex = motion(Flex);
@@ -37,9 +38,9 @@ const LandingPage: FC<LandingPageProps> = ({ onGetStarted }) => {
     const textColor = useColorModeValue("gray.600", "gray.300");
     const accentColor = useColorModeValue("primary.600", "primary.400");
     const borderColor = useColorModeValue("gray.200", "gray.700");
-    const iconBg = useColorModeValue("primary.50", "primary.900");
-    const ctaBg = useColorModeValue("primary.50", "primary.900");
-    const ctaBorderColor = useColorModeValue("primary.200", "primary.700");
+    const iconBg = useColorModeValue("primary.50", "gray.800");
+    const ctaBg = useColorModeValue("primary.50", "gray.800");
+    const ctaBorderColor = useColorModeValue("primary.200", "gray.600");
 
     const features = [
         {
@@ -286,6 +287,48 @@ const LandingPage: FC<LandingPageProps> = ({ onGetStarted }) => {
                         </MotionBox>
                     ))}
                 </Grid>
+            </Container>
+
+            {/* Embeddable Exchange Section */}
+            <Container maxW="7xl" py={20}>
+                <MotionBox
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.9 }}
+                    textAlign="center"
+                    mb={12}
+                >
+                    <Heading size="xl" mb={4}>
+                        Live Token Exchange
+                    </Heading>
+                    <Text fontSize="lg" color={textColor} maxW="2xl" mx="auto" mb={8}>
+                        Experience our embedded marketplace directly within the platform.
+                        Trade tokens seamlessly with our integrated exchange.
+                    </Text>
+                </MotionBox>
+
+                <MotionBox
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 1.0 }}
+                >
+                    <Card
+                        bg={cardBg}
+                        border="1px"
+                        borderColor={borderColor}
+                        borderRadius="xl"
+                        overflow="hidden"
+                        shadow="xl"
+                        className={cn(
+                            tailwindUtils.effects.shadow.soft,
+                            "tw-backdrop-blur-sm"
+                        )}
+                    >
+                        <CardBody p={4}>
+                            <EmbeddableExchange />
+                        </CardBody>
+                    </Card>
+                </MotionBox>
             </Container>
 
             {/* CTA Section */}
