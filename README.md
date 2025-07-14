@@ -189,6 +189,14 @@ The project includes a complete Tailwind CSS configuration with:
 
 See [`TAILWIND_INTEGRATION.md`](./TAILWIND_INTEGRATION.md) for detailed setup instructions.
 
+## 🧩 Embeddable Marketplace
+
+Access the live embeddable marketplace here:
+
+[https://embeddables.testnet.andromedaprotocol.io/elgafar-1/rkk-token-exchange/embeddables-exchange-1](https://embeddables.testnet.andromedaprotocol.io/elgafar-1/rkk-token-exchange/embeddables-exchange-1)
+
+Embed this link in your website or application to provide instant access to the Andromeda Protocol token exchange.
+
 ## 🌟 Key Features Deep Dive
 
 ### 🎨 **Theme System**
