@@ -16,6 +16,37 @@
 
 </div>
 
+---
+
+## 📘 Project Description
+
+This project is a fully embeddable and responsive NFT marketplace powered by **Andromeda Protocol**. Built with **Next.js 13**, it features dual UI support with **Chakra UI** and **Tailwind CSS**, real-time blockchain interactions via **CosmWasm**, and native support for **Keplr Wallet**. Users can discover NFTs, participate in auctions, manage collections, and even embed token exchanges into any site.
+
+---
+
+## 🔭 Vision Statement
+
+The vision behind this project is to empower creators, developers, and communities to launch decentralized marketplaces quickly and beautifully. With blockchain complexity abstracted away, our goal is to bring **Web3 to Web2 simplicity** — enabling real-world use cases through modular, embeddable tools that unlock ownership, liquidity, and opportunity.
+
+---
+
+## 🧑‍💻 About Me
+
+- **Name**: Rohit Kumar Kundu
+- **University**: Sister Nivedita University
+- **Role**: Blockchain Developer & Web3 Explorer
+- **Projects**: BitMint Pay, TrustPay Card, ELEGENT_Card
+- **Focus**: NFTs, cross-chain UX, DeFi for creators
+- **GitHub**: [ROHIT8759](https://github.com/ROHIT8759)
+
+---
+
+## 📖 Personal Story
+
+As a blockchain student-developer, I was curious about how smart contracts could power digital economies. This curiosity led to exploring Andromeda Protocol. With this marketplace, I’m combining beautiful frontend design with powerful Web3 functionality to simplify how creators and communities interact with blockchain tech.
+
+---
+
 ## ✨ Features
 
 ### 🎨 **Dual UI Framework Support**
