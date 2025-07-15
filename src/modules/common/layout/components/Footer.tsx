@@ -1,4 +1,4 @@
-import { Flex, Text, Link } from "@chakra-ui/react";
+import { Flex, Text, Link, useColorModeValue } from "@chakra-ui/react";
 import React, { FC } from "react";
 import useApp from "@/lib/app/hooks/useApp";
 
@@ -8,11 +8,14 @@ const Footer: FC<FooterProps> = (props) => {
   const { } = props;
   const { config } = useApp();
 
+  const bg = useColorModeValue("gray.100", "#101828");
+  const textColor = useColorModeValue("gray.700", "white");
+
   return (
     <Flex
-      backgroundColor="#101828"
+      backgroundColor={bg}
       direction="column"
-      textColor="white"
+      textColor={textColor}
       align='center'
       p='4'
       data-testid="footer"
