@@ -1,4 +1,4 @@
-# 🚀 Andromeda Protocol Embeddable Marketplace Demo
+# 🚀 RKK_D-App 🚀
 
 <div align="center">
 
