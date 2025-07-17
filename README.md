@@ -4,13 +4,13 @@
 
 ![Andromeda Protocol](./public/logo.png)
 
-**A modern, responsive NFT marketplace built with Next.js and powered by Andromeda Protocol**
+**A modern, responsive RKK_D-App built with Next.js and powered by Andromeda Protocol**
 
 [![Next.js](https://img.shields.io/badge/Next.js-13.5.2-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18.2.0-blue?style=flat-square&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.8.3-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Chakra UI](https://img.shields.io/badge/Chakra%20UI-2.8.1-green?style=flat-square&logo=chakraui)](https://chakra-ui.com/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.0+-blue?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer%20Motion-10.16.4-ff69b4?style=flat-square&logo=framer)](https://www.framer.com/motion/)
 
 [Live Demo](#) • [Documentation](#features) • [API Reference](#tech-stack) • [Contributing](./CONTIBUTING.md)
 
@@ -20,7 +20,7 @@
 
 ## 📘 Project Description
 
-This project is a fully embeddable and responsive NFT marketplace powered by **Andromeda Protocol**. Built with **Next.js 13**, it features dual UI support with **Chakra UI** and **Tailwind CSS**, real-time blockchain interactions via **CosmWasm**, and native support for **Keplr Wallet**. Users can discover NFTs, participate in auctions, manage collections, and even embed token exchanges into any site.
+This project is a fully embeddable and responsive RKK_D-APP powered by **Andromeda Protocol**. Built with **Next.js 13**, it features **Chakra UI** components with **Framer Motion** animations, real-time blockchain interactions via **CosmWasm**, and native support for **Keplr Wallet**. Users can discover RKK_D-App, participate in auctions, manage collections, and even embed token exchanges into any site.
 
 ---
 
@@ -36,7 +36,7 @@ The vision behind this project is to empower creators, developers, and communiti
 - **University**: Sister Nivedita University
 - **Role**: Blockchain Developer & Web3 Explorer
 - **Projects**: BitMint Pay, TrustPay Card, ELEGENT_Card
-- **Focus**: NFTs, cross-chain UX, DeFi for creators
+- **Focus**: RKK_D-App, cross-chain UX, DeFi for creators
 - **GitHub**: [ROHIT8759](https://github.com/ROHIT8759)
 
 ---
@@ -49,12 +49,12 @@ As a blockchain student-developer, I was curious about how smart contracts could
 
 ## ✨ Features
 
-### 🎨 **Dual UI Framework Support**
+### 🎨 **Modern UI Framework**
 
 - **Chakra UI**: Complete component library with enhanced dark mode
-- **Tailwind CSS**: Utility-first framework for custom designs
-- **Seamless Toggle**: Switch between frameworks in real-time
-- **Consistent Design**: Unified experience across both implementations
+- **Framer Motion**: Smooth animations and transitions
+- **Responsive Design**: Mobile-first approach with breakpoint optimization
+- **Consistent Design**: Unified experience across all components
 
 ### 🌙 **Advanced Theme System**
 
@@ -65,10 +65,10 @@ As a blockchain student-developer, I was curious about how smart contracts could
 
 ### 🏪 **Marketplace Features**
 
-- **NFT Discovery**: Browse collections with advanced filtering
 - **Auction System**: Real-time bidding with live updates
 - **Token Exchange**: Multi-token trading capabilities
 - **Collection Management**: Comprehensive collection analytics
+- **Embeddable Components**: Ready-to-use marketplace widgets
 
 ### 🔗 **Blockchain Integration**
 
@@ -76,6 +76,13 @@ As a blockchain student-developer, I was curious about how smart contracts could
 - **CosmWasm**: Smart contract interactions
 - **Keplr Wallet**: Secure wallet connection
 - **Multi-Chain**: Support for Cosmos ecosystem
+
+### 🧩 **Extensible Architecture**
+
+- **Modular Design**: Easy to add new collection types
+- **Configurable Collections**: Simple configuration in `src/config.ts`
+- **Additional Features**: Crowdfunding module available (not configured by default)
+- **Plugin System**: Support for custom marketplace features
 
 ## 🚀 Quick Start
 
@@ -89,8 +96,8 @@ As a blockchain student-developer, I was curious about how smart contracts could
 
 ```bash
 # Clone the repository
-git clone https://github.com/ROHIT8759/embeddable-marketplace.git
-cd embeddable-marketplace
+git clone https://github.com/ROHIT8759/RKK_D-App.git
+cd RKK_D-App
 
 # Install dependencies
 npm install
@@ -101,12 +108,9 @@ npm run dev
 
 🎉 **Visit [http://localhost:3000](http://localhost:3000)** to see the marketplace in action!
 
-### 🎛️ Framework Toggle
+### � **Theme Toggle**
 
-Use the toggle button in the navigation bar to switch between:
-
-- **Chakra UI** - Component-based approach
-- **Tailwind CSS** - Utility-first styling
+Click the theme toggle button in the top-right corner to switch between light and dark modes.
 
 ## 📱 Screenshots
 
@@ -117,11 +121,22 @@ Use the toggle button in the navigation bar to switch between:
 <img src="./docs/screenshots/landing-dark.png" alt="Landing Page Dark" width="400" />
 </div>
 
-### NFT Marketplace
+### RKK_Marketplace
 
 <div align="center">
-<img src="./docs/screenshots/marketplace.png" alt="Marketplace" width="400" />
-<img src="./docs/screenshots/collection.png" alt="Collection View" width="400" />
+<img src="./docs/screenshots/marketplace (2).png" alt="Marketplace" width="400" />
+</div>
+
+### RKK_Excgange
+
+<div align="center">
+<img src="./docs/screenshots/TokenExchange.png" alt="Excgange" width="400" />
+</div>
+
+### RKK_Auction
+
+<div align="center">
+<img src="./docs/screenshots/AutionPlatfrom.png" alt="Auction" width="400" />
 </div>
 
 ## 🛠 Tech Stack
@@ -132,11 +147,11 @@ Use the toggle button in the navigation bar to switch between:
 - **[React 18.2.0](https://reactjs.org/)** - UI library with concurrent features
 - **[TypeScript 4.8.3](https://www.typescriptlang.org/)** - Type safety and better DX
 
-### **UI Frameworks**
+### **UI Framework**
 
 - **[Chakra UI 2.8.1](https://chakra-ui.com/)** - Modular and accessible components
-- **[Tailwind CSS 3.0+](https://tailwindcss.com/)** - Utility-first CSS framework
 - **[Framer Motion 10.16.4](https://www.framer.com/motion/)** - Animation library
+- **[Lucide React](https://lucide.dev/)** - Beautiful SVG icons
 
 ### **Blockchain**
 
@@ -168,6 +183,9 @@ embeddable-marketplace-demo/
 │   │   ├── 📁 marketplace/    # Marketplace features
 │   │   ├── 📁 collection/     # Collection management
 │   │   ├── 📁 auction/        # Auction system
+│   │   ├── 📁 exchange/       # Token exchange
+│   │   ├── 📁 cw20/           # CW20 token support
+│   │   ├── 📁 cw721/          # CW721 NFT support
 │   │   └── 📁 common/         # Shared components
 │   ├── 📁 theme/              # UI theme configuration
 │   └── 📁 utils/              # Utility functions
@@ -210,14 +228,14 @@ NEXT_PUBLIC_CHAIN_NAME=Andromeda Testnet
 
 ### Tailwind CSS Setup
 
-The project includes a complete Tailwind CSS configuration with:
+The project includes Tailwind CSS integration alongside Chakra UI for additional styling flexibility:
 
-- **Custom Color Palette** - Andromeda Protocol branding
-- **Dark Mode Support** - Class-based dark mode
-- **Custom Animations** - Smooth transitions and effects
-- **Responsive Breakpoints** - Mobile-first design
+- **Chakra UI Components** - Primary component library
+- **Tailwind Utilities** - Additional styling utilities with `tw-` prefix
+- **Dark Mode Support** - Consistent theming across both systems
+- **Custom Animations** - Enhanced with Framer Motion
 
-See [`TAILWIND_INTEGRATION.md`](./TAILWIND_INTEGRATION.md) for detailed setup instructions.
+See [`src/styles/globals.css`](./src/styles/globals.css) for Tailwind configuration.
 
 ## 🧩 Embeddable Marketplace
 
@@ -236,12 +254,12 @@ Embed this link in your website or application to provide instant access to the 
 - **Persistent State**: Remembers user preference
 - **Smooth Transitions**: Animated theme switching
 
-### 🔄 **Framework Toggle**
+### 🔄 **Theme System**
 
-- **Real-time Switching**: No page reload required
-- **State Preservation**: Maintains application state
-- **Performance Optimized**: Code splitting for each framework
-- **Consistent UX**: Same functionality across frameworks
+- **Real-time Switching**: Seamless light/dark mode toggle
+- **State Preservation**: Remembers user preference across sessions
+- **System Integration**: Respects OS theme preference by default
+- **Smooth Transitions**: Animated theme switching with Framer Motion
 
 ### 📱 **Responsive Design**
 
@@ -269,16 +287,11 @@ We welcome contributions! Please see our [Contributing Guide](./CONTIBUTING.md) 
 - **TypeScript**: Type safety throughout
 - **Conventional Commits**: Structured commit messages
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ## 🔗 Links
 
-- **[Andromeda Protocol](https://andromedaprotocol.io/)** - Official website
 - **[Documentation](https://docs.andromedaprotocol.io/)** - Protocol documentation
-- **[Discord](https://discord.gg/andromedaprotocol)** - Community chat
-- **[Twitter](https://twitter.com/andromedaprot)** - Latest updates
+
 
 ## 🙏 Acknowledgments
 

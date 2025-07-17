@@ -108,7 +108,7 @@ const LandingPage: FC<LandingPageProps> = ({ onGetStarted }) => {
                             "tw-backdrop-blur-sm"
                         )}
                     >
-                        🚀 Powered by Andromeda Protocol
+                        🚀 Powered by RKK_D-App
                     </Badge>
 
                     <Heading
@@ -124,7 +124,7 @@ const LandingPage: FC<LandingPageProps> = ({ onGetStarted }) => {
                     >
                         The Future of
                         <br />
-                        NFT Marketplace
+                        RKK D-App
                     </Heading>
 
                     <Text
