@@ -35,9 +35,9 @@ const CONFIG: IConfig = {
         },
         {
             exchange:
-                "stars1a9l4h3dkh6athk9z2qax63reg4ft5zs32sqdze6ruhdhxsdk8u6s4mpxyy",
-            cw20: "stars1ud5j93qj24zae3dgdugsqjkk9ez6hmg23c8gku4zygmvewn39x8sfmrw4k",
-            name: "Exchange Example",
+                "stars1aaur0kapuruu6uav7gvclaqdk355r3mqunxz6kja6te3asrck64q45wayz",
+            cw20: "stars13adug76r6jmathe6ru203lf93vsmsyens9jn2laazt04sauxcjeqktpuyj",
+            name: "RKK_TOKEN",
             type: ICollectionType.EXCHANGE,
             id: "exchange",
         },
