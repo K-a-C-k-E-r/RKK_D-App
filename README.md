@@ -67,7 +67,6 @@ As a blockchain student-developer, I was curious about how smart contracts could
 
 - **Auction System**: Real-time bidding with live updates
 - **Token Exchange**: Multi-token trading capabilities
-- **Collection Management**: Comprehensive collection analytics
 - **Embeddable Components**: Ready-to-use marketplace widgets
 
 ### 🔗 **Blockchain Integration**
@@ -127,7 +126,7 @@ Click the theme toggle button in the top-right corner to switch between light an
 <img src="./docs/screenshots/marketplace (2).png" alt="Marketplace" width="400" />
 </div>
 
-### RKK_Excgange
+### RKK_Exchange_Token
 
 <div align="center">
 <img src="./docs/screenshots/TokenExchange.png" alt="Excgange" width="400" />
