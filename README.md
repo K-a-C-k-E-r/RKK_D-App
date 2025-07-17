@@ -67,7 +67,6 @@ As a blockchain student-developer, I was curious about how smart contracts could
 
 - **NFT Discovery**: Browse collections with advanced filtering
 - **Auction System**: Real-time bidding with live updates
-- **Crowdfunding**: Support for community-driven projects
 - **Token Exchange**: Multi-token trading capabilities
 - **Collection Management**: Comprehensive collection analytics
 

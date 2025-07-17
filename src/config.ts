@@ -19,19 +19,11 @@ const CONFIG: IConfig = {
         },
         {
             marketplace:
-                "stars1gmjfd922u5jf8szjwad9k47ylsg0ftg6pvnaa7fplh8vrd0w4z0qa827u0",
-            cw721: "stars1cf0urzkvhph9nhxe5fv8rq25j8x683z3vcjfwc9ypv5qkar0jw2sv78dwu",
-            name: "Marketplace Example",
+                "stars186yewl6puudcagukvzu5j86gkrs9g7sqgqzxprp8nx7mpd9m8yjqaj3hat",
+            cw721: "stars10hp8g69fp0lpslq8ky3p20gce7exz6zaj60hxqz6peqel705m8nq6c6dhh",
+            name: "RKK Market Place",
             type: ICollectionType.MARKETPLACE,
             id: "marketplace",
-        },
-        {
-            crowdfund:
-                "stars1a0el2qceyryftj9cx0ds4as3sgfu4ezj7mumtdp34v5c9qpswzaqw0qq38",
-            cw721: "stars1uj5tl3g26022ev9ym6x39xtv09hz3xvc7e3c5wthdpufxtwk7rsscs6jz4",
-            name: "Crowdfund Example",
-            type: ICollectionType.CROWDFUND,
-            id: "crowdfund",
         },
         {
             exchange:
