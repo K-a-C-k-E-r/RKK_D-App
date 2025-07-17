@@ -224,7 +224,7 @@ See [`TAILWIND_INTEGRATION.md`](./TAILWIND_INTEGRATION.md) for detailed setup in
 
 Access the live embeddable marketplace here:
 
-[https://embeddables.testnet.andromedaprotocol.io/elgafar-1/rkk-token-exchange/embeddables-exchange-1](https://embeddables.testnet.andromedaprotocol.io/elgafar-1/rkk-token-exchange/embeddables-exchange-1)
+[https://embeddables.testnet.andromedaprotocol.io/elgafar-1/rkk-dapp](https://embeddables.testnet.andromedaprotocol.io/elgafar-1/rkk-dapp)
 
 Embed this link in your website or application to provide instant access to the Andromeda Protocol token exchange.
 
