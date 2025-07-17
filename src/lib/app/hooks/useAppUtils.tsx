@@ -12,7 +12,7 @@ export const useAppUtils = () => {
     (id: string) => {
       return getCollections().find((col) => col.id === id);
     },
-    [config]
+    [getCollections]
   );
 
   return { getCollections, getCollection };

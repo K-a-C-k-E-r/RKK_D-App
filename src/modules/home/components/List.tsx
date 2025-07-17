@@ -24,7 +24,7 @@ const EmbeddableList: FC<Props> = (props) => {
         } else {
             setkeyList(apps ?? []);
         }
-    }, [searchInput]);
+    }, [searchInput, apps]);
 
     useEffect(() => {
         setkeyList(apps ?? []);

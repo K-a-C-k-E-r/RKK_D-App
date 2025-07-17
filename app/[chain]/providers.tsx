@@ -25,7 +25,7 @@ const Providers: FC<Props> = (props) => {
                 connectAndromedaClient(chainId);
             }
         }
-    }, [keplr, isConnected, isLoading, chainId]);
+    }, [keplr, isConnected, isLoading, chainId, connectedChainId]);
 
     return (
         <>

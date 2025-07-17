@@ -51,7 +51,7 @@ const CrowdfundInfo: FC<CrowdfundInfoProps> = (props) => {
       setDuration(dayjs.duration(expires.diff(today)));
     }, 1000);
     return () => clearInterval(tId);
-  }, [crowdfundState]);
+  }, [crowdfundState, expires, isEnded]);
 
   return (
     <Box w="full" data-testid="crowdfund-info">

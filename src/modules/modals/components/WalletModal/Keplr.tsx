@@ -27,7 +27,7 @@ const KeplrWallet: FC<Props> = (props) => {
             alignItems='center'
             w='full'
         >
-            <Image src="/keplr.png" h='8' />
+            <Image src="/keplr.png" h='8' alt="Keplr Wallet" />
 
             <VStack alignItems='start' spacing={1} flex='1'>
                 <Text fontSize='md'>
@@ -61,6 +61,7 @@ const SupportedBrowserLinks: FC = (props) => {
                     target="_blank">
                     <Image
                         src={BROWSER_ICONS[browser]}
+                        alt={`Download for ${browser}`}
                     />
                 </AspectRatio>
             ))}

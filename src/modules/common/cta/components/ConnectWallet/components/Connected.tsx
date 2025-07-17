@@ -41,7 +41,7 @@ const Connected: FC<ConnectedProps> = (props) => {
               borderColor={isOpen ? "primary.600" : "gray.300"}
             >
               <HStack mr='2'>
-                <Image src={config?.iconUrls?.sm ?? ""} w="5" />
+                <Image src={config?.iconUrls?.sm ?? ""} w="5" alt="Chain icon" />
                 <Text>{truncate(account?.address ?? "")}</Text>
                 <Badge
                   colorScheme={
@@ -60,7 +60,7 @@ const Connected: FC<ConnectedProps> = (props) => {
           <PopoverContent>
             <PopoverBody>
               <HStack mb={3} justifyContent="start">
-                <Image src={config?.iconUrls?.sm ?? ""} w="5" />
+                <Image src={config?.iconUrls?.sm ?? ""} w="5" alt="Chain icon" />
                 <Text fontWeight={600} color="gray.700">
                   {config?.chainName ?? config?.chainId}
                 </Text>

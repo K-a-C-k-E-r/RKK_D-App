@@ -95,7 +95,7 @@ const BroadcastingModal: FC<TransactionModalProps & OptionalProps> = memo(
           </Text>
         </Box>
       );
-    }, [props, result]);
+    }, [result, chainConfig?.blockExplorerTxPages]);
 
     return (
       <Box

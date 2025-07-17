@@ -41,7 +41,7 @@ const TransactionModal: React.FC<TransactionModalProps> = memo(
         default:
           return <></>;
       }
-    }, [stage, props]);
+    }, [stage, props, close]);
     return (
       <Box py="30px">
         {StageComponent}

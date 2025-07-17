@@ -57,7 +57,7 @@ const AuctionInfo: FC<AuctionInfoProps> = (props) => {
       }
     }, 1000);
     return () => clearInterval(tId);
-  }, [auctionState, isStarted, isEnded]);
+  }, [auctionState, isStarted, isEnded, endTime, startTime]);
 
   return (
     <Box w="full" data-testid="auction-info">

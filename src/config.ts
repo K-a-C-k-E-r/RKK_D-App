@@ -10,12 +10,12 @@ const CONFIG: IConfig = {
     collections: [
         {
             auction:
-                "stars19xddx2zdky6d9jlsrqqyavfycr6pytwmn799vvqsu7fzd4dp7k4q9etd9q",
-            cw721: "stars15l5j0hf80ayj7yuhd6qjhlgwgmgy6apekwpe3k76lgltfhqge3cqemdnth",
-            name: "Auction Example",
+                "stars1j8kf6aa5dufvv2ewasa2rdrj4hcat5nh5mcrjn3g9mh3v4vh8dkqqemceu",
+            cw721: "stars1w45ng0u2xqakqd9qah2s4cl4fny3n6qecgfy4uaj6af2mswx4x9qjhknyl",
+            name: "RKK_Auction Example",
             type: ICollectionType.AUCTION,
             id: "auction",
-            featured: "ANDR1"
+            featured: "STARS1"
         },
         {
             marketplace:

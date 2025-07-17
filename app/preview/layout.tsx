@@ -10,7 +10,7 @@ interface Props {
     children?: ReactNode;
 }
 
-const RootLayout = async (props: Props) => {
+const RootLayout: FC<Props> = (props) => {
     const { children } = props;
     useLayoutEffect(() => {
         useAppStore.setState(prev => ({

@@ -6,7 +6,7 @@ import { DiscoverPage } from "@/modules/discover";
 interface Props {
 }
 
-const Page = async (props: Props) => {
+const Page: FC<Props> = (props) => {
     const { } = props;
     return (
         <DiscoverPage />
