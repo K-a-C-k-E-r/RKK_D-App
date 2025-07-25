@@ -37,7 +37,7 @@ The vision behind this project is to empower creators, developers, and communiti
 - **Role**: Blockchain Developer & Web3 Explorer
 - **Projects**: BitMint Pay, TrustPay Card, ELEGENT_Card
 - **Focus**: RKK_D-App, cross-chain UX, DeFi for creators
-- **GitHub**: [ROHIT8759](https://github.com/ROHIT8759)
+- **GitHub**: [K-a-C-k-E-r](https://github.com/K-a-C-k-E-r)
 
 ---
 
@@ -96,7 +96,7 @@ As a blockchain student-developer, I was curious about how smart contracts could
 
 ```bash
 # Clone the repository
-git clone https://github.com/ROHIT8759/RKK_D-App.git
+git clone https://github.com/K-a-C-k-E-r/RKK_D-App.git
 cd RKK_D-App
 
 # Install dependencies
