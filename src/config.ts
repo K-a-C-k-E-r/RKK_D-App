@@ -33,6 +33,14 @@ const CONFIG: IConfig = {
             type: ICollectionType.EXCHANGE,
             id: "exchange",
         },
+        {
+            crowdfund:
+                "stars1rxcmf3m3ge3z9ar07nm50kfqzuwc3mmwvepuv8alpp0fkd44l7ns075hfn",
+            cw721: "stars1aj4dn2zz3q0vmlwx8n5002essncp5ug589vfwsvgllz789vrtg2q2dshx3",
+            name: "RKK_Crowdfund",
+            type: ICollectionType.CROWDFUND,
+            id: "crowdfund",
+        }
     ],
 };
 
