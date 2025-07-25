@@ -1,4 +1,12 @@
-import { ICollectionType, IConfig } from "./lib/app/types";
+import { ICollectionType,         },
+        {
+            exchange:
+                "stars1aaur0kapuruu6uav7gvclaqdk355r3mqunxz6kja6te3asrck64q45wayz",
+            cw20: "stars13adug76r6jmathe6ru203lf93vsmsyens9jn2laazt04sauxcjeqktpuyj",
+            name: "RKK_TOKEN",
+            type: ICollectionType.EXCHANGE,
+            id: "exchange",
+        },/lib/app/types";
 
 const CONFIG: IConfig = {
     coinDenom: "ustars",
@@ -24,6 +32,14 @@ const CONFIG: IConfig = {
             name: "RKK Market Place",
             type: ICollectionType.MARKETPLACE,
             id: "marketplace",
+        },
+        {
+            crowdfund:
+                "stars1a0el2qceyryftj9cx0ds4as3sgfu4ezj7mumtdp34v5c9qpswzaqw0qq38",
+            cw721: "stars1uj5tl3g26022ev9ym6x39xtv09hz3xvc7e3c5wthdpufxtwk7rsscs6jz4",
+            name: "RKK Crowdfund",
+            type: ICollectionType.CROWDFUND,
+            id: "crowdfund",
         },
         {
             exchange:

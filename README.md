@@ -67,6 +67,7 @@ As a blockchain student-developer, I was curious about how smart contracts could
 
 - **Auction System**: Real-time bidding with live updates
 - **Token Exchange**: Multi-token trading capabilities
+- **Crowdfunding**: Support for community-driven projects and funding campaigns
 - **Embeddable Components**: Ready-to-use marketplace widgets
 
 ### 🔗 **Blockchain Integration**
@@ -80,7 +81,7 @@ As a blockchain student-developer, I was curious about how smart contracts could
 
 - **Modular Design**: Easy to add new collection types
 - **Configurable Collections**: Simple configuration in `src/config.ts`
-- **Additional Features**: Crowdfunding module available (not configured by default)
+- **Full Feature Set**: Includes auction, marketplace, crowdfunding, and exchange functionality
 - **Plugin System**: Support for custom marketplace features
 
 ## 🚀 Quick Start
@@ -141,6 +142,13 @@ Click the theme toggle button in the top-right corner to switch between light an
 <img src="./docs/screenshots/AutionPlatfrom.png" alt="Auction" width="400" />
 </div>
 
+### RKK_Crowdfund
+
+<div align="center">
+<img src="./docs/screenshots/crowdfund1.png" alt="Crowdfund Platform" width="400" />
+<img src="./docs/screenshots/crowdfund2.png" alt="Crowdfund Campaign" width="400" />
+</div>
+
 ## 🛠 Tech Stack
 
 ### **Frontend**
@@ -185,6 +193,7 @@ embeddable-marketplace-demo/
 │   │   ├── 📁 marketplace/    # Marketplace features
 │   │   ├── 📁 collection/     # Collection management
 │   │   ├── 📁 auction/        # Auction system
+│   │   ├── 📁 crowdfund/      # Crowdfunding campaigns
 │   │   ├── 📁 exchange/       # Token exchange
 │   │   ├── 📁 cw20/           # CW20 token support
 │   │   ├── 📁 cw721/          # CW721 NFT support
@@ -289,11 +298,9 @@ We welcome contributions! Please see our [Contributing Guide](./CONTIBUTING.md) 
 - **TypeScript**: Type safety throughout
 - **Conventional Commits**: Structured commit messages
 
-
 ## 🔗 Links
 
 - **[Documentation](https://docs.andromedaprotocol.io/)** - Protocol documentation
-
 
 ## 🙏 Acknowledgments
 
