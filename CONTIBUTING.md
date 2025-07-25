@@ -13,11 +13,11 @@ Thank you for your interest in contributing! Please follow these guidelines when
 
 ## Config Structure
 
-| Field       | Description                                                                               |
-| ----------- | ----------------------------------------------------------------------------------------- |
-| Name        | Name of the Embeddable                                                                    |
-| Chain Id    | Chain Id for the embeddable to connect on. Any incompatible ADO will probably throw error |
-| Collections | List of various collections. Collection can be auction, marketplace, exchange, etc.       |
+| Field       | Description                                                                                    |
+| ----------- | ---------------------------------------------------------------------------------------------- |
+| Name        | Name of the Embeddable                                                                         |
+| Chain Id    | Chain Id for the embeddable to connect on. Any incompatible ADO will probably throw error      |
+| Collections | List of various collections. Collection can be auction, marketplace, crowdfund, exchange, etc. |
 
 For more info on config, take a look at `src/config.ts` file
 
